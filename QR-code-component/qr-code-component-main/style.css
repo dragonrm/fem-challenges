@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Outfit:wght@400;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* colors */
+:root {
+	--clr-base-100: hsl(0, 0%, 100%);
+	--clr-base-200: hsl(212, 45%, 89%);
+	--clr-base-300: hsl(220, 15%, 55%);
+	--clr-base-400: hsl(218, 44%, 22%);
+
+	--fc-light: var(--clr-base-300);
+	--fc-dark: var(--clr-base-400);
+}
+
+html {
+	font-family: Outfit;
+	font-size: 0.9rem;
+	font-weight: 400;
+	color: var(--fc-dark);
+	line-height: 1.6;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+body {
+	background-color: var(--clr-base-200);
+}
+h2,
+p {
+	text-align: center;
+	margin: 1em 0;
+}
+
+h2 {
+	font-size: 1.5rem;
+	padding: 0 1em;
+}
+p {
+	padding: 0 2em;
+}
+
+.container {
+	max-width: 23.5rem;
+	margin: 10rem auto;
+	padding: 1rem;
+	border-radius: 20px;
+	overflow: hidden;
+	background-color: var(--clr-base-100);
+}
+
+.qr-img img {
+	max-width: 100%;
+	display: block;
+	border-radius: 10px;
+}
