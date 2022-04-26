@@ -22,8 +22,8 @@ Just my first try at the Frontend Mentor challenges.
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://dragonrm.github.io/fem-challenges/QR-code-component/qr-code-component-main/](https://dragonrm.github.io/fem-challenges/QR-code-component/qr-code-component-main/)
+
 
 
 ### Built with
