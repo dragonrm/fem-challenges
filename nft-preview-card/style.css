@@ -1,0 +1,130 @@
+@import url(./_reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600&family=Outfit:wght@400;700&display=swap");
+
+:root {
+	font-family: Outfit;
+
+	--clr-pri-100: hsl(215, 51%, 70%);
+	--clr-pri-200: hsl(178, 100%, 50%);
+	--clr-pri-200-trans: hsla(178, 100%, 50%, 0.2);
+
+	--clr-neu-900: hsl(217, 54%, 11%);
+	--clr-neu-800: hsl(216, 50%, 16%);
+	--clr-neu-500: hsl(215, 32%, 27%);
+	--clr-neu-100: hsl(0, 0%, 100%);
+
+	--oxford-blue: hsl(217, 54%, 11%);
+	--light-oxford-blue: hsl(216, 50%, 16%);
+	--indigo-dye: hsl(215, 32%, 27%);
+	--blue-yonder: hsl(216, 30%, 55%);
+	--aqua: hsl(178, 100%, 50%);
+	--white: hsl(0, 0%, 100%);
+}
+
+html {
+	font-family: Outfit;
+	/* font-size: 0.9rem; */
+	font-weight: 300;
+	color: var(--clr-pri-100);
+	line-height: 1.6;
+}
+
+body {
+	background-color: var(--clr-neu-900);
+	padding: 1.5rem 0;
+	margin: auto;
+	min-height: 100vh;
+	padding: 1.56rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.card {
+	max-width: 23.5rem;
+	background-color: var(--clr-neu-800);
+	padding: 1.25rem;
+	border-radius: 1rem;
+	box-shadow: 0px 20px 25px 15px rgba(0, 0, 0, 0.05),
+		0px 40px 30px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card__product-img {
+	border-radius: 0.5rem;
+	position: relative;
+	cursor: pointer;
+	/* overflow: hidden; */
+}
+.card__product-img::after {
+	content: url(./images/icon-view.svg);
+	background-color: var(--clr-pri-200-trans);
+	opacity: 0;
+	position: absolute;
+	inset: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 200ms ease;
+}
+.card__product-img:hover::after {
+	opacity: 1;
+}
+.card__product-img img {
+	width: 100%;
+	display: block;
+}
+.card__body {
+	margin-bottom: 1rem;
+	padding: 1.56rem 0;
+	border-bottom: 1px solid var(--clr-pri-100);
+}
+
+.card__title {
+	color: var(--clr-neu-100);
+	font-size: 1.6rem;
+	font-weight: 500;
+	margin-bottom: 1rem;
+}
+.card__title:hover,
+.card__title:focus {
+	color: var(--clr-pri-200);
+}
+.card__text {
+	padding: 1em 0;
+	font-size: 1.1rem;
+	line-height: 1.6;
+	margin-bottom: 1.3rem;
+}
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.card__price,
+.card__timer {
+	display: flex;
+	align-items: center;
+	font-weight: 400;
+}
+.card__price img,
+.card__timer img {
+	padding-right: 0.5rem;
+}
+.card__price {
+	color: var(--clr-pri-200);
+}
+.card__footer {
+	display: flex;
+	align-items: center;
+}
+.card__footer a {
+	color: var(--clr-neu-100);
+}
+.card__footer a:hover {
+	color: var(--clr-pri-200);
+}
+.card__author-img {
+	max-width: 2rem;
+	border: 1px solid white;
+	border-radius: 50%;
+	margin-right: 1rem;
+}
