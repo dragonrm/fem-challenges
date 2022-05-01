@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+@import url(./_reset.css);
+
+:root {
+	/* Neutral  */
+	--clr-neu-0: hsl(0 0% 100%);
+	--clr-neu-100: hsl(225, 100%, 98%);
+	--clr-neu-400: hsla(224, 23%, 55%, 1);
+	--clr-neu-900: hsl(223, 47%, 23%);
+	/* Primary */
+	--clr-pri-100: hsl(225, 100%, 94%);
+	--clr-pri-300: hsla(245, 83%, 68%, 1);
+	--clr-pri-400: hsl(245, 75%, 52%);
+
+	--fs-700: 1.75rem;
+	--fs-400: 1rem;
+	--fs-300: 0.875rem;
+
+	--fw-400: 500;
+	--fw-700: 700;
+	--fw-900: 900;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+body {
+	font-family: "Red Hat Display", sans-serif;
+	font-size: var(--fs-400);
+	font-weight: var(--fw-400);
+	color: var(--clr-neu-400);
+	line-height: 1.6;
+	background-color: var(--clr-pri-100);
+	display: grid;
+	min-height: 100vh;
+	place-items: center;
+}
+h2 {
+	font-size: var(--fs-700);
+	color: var(--clr-neu-900);
+	line-height: 1.1;
+	font-weight: var(--fw-900);
+}
+
+/* comp */
+.grid-flow {
+	display: grid;
+	gap: 1rem;
+}
+.flex-row {
+	display: flex;
+	gap: 1rem;
+}
+/* util */
+.padding-24 {
+	padding: 1.5rem;
+}
+.padding-48 {
+	padding: 3rem;
+}
+.text-neu-900 {
+	color: var(--clr-neu-900);
+}
+.text-neu-400 {
+	color: var(--clr-neu-400);
+}
+.bg-neu-0 {
+	background-color: var(--clr-neu-0);
+}
+.bg-neu-100 {
+	background-color: var(--clr-neu-100);
+}
+.text-align-left {
+	text-align: start;
+}
+.text-align-center {
+	text-align: center;
+}
+.text-align-right {
+	text-align: end;
+}
+.fw-bold {
+	font-weight: 700;
+}
+.fw-black {
+	font-weight: 900;
+}
+.br-1 {
+	border-radius: 0.5em;
+	overflow: hidden;
+}
+.br-2 {
+	border-radius: 1rem;
+	overflow: hidden;
+}
+.push-right {
+	margin-left: auto;
+}
+.link {
+	cursor: pointer;
+	background: transparent;
+	text-decoration: underline;
+	border: 0;
+	font-weight: var(--fw-700);
+}
+.link:hover,
+.link:focus {
+	color: var(--clr-neu-400);
+	text-decoration: none;
+}
+.shadow {
+	box-shadow: 0px 5px 20px var(--clr-pri-300);
+	margin-bottom: 0.5rem;
+}
+/* block */
+.card {
+	/* max-width: 20.625rem; */
+	max-width: 28.125rem;
+}
+.button {
+	cursor: pointer;
+	background: transparent;
+	padding: 1em 2em;
+	font-weight: var(--fw-700);
+	color: var(--clr-neu-0);
+	border: 0;
+	border-radius: 1rem;
+}
+.primary {
+	background: var(--clr-pri-400);
+}
+.accent {
+	padding: 0;
+	color: var(--clr-neu-400);
+}
+.primary:hover,
+.primary:focus {
+	background: var(--clr-pri-300);
+}
+.accent:hover,
+.accent:focus {
+	color: var(--clr-neu-900);
+}
